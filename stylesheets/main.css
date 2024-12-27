@@ -8,7 +8,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
 }
 
 /* Contenedor principal */
@@ -16,10 +15,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch; /* Las imágenes ocuparán la altura completa del texto */
   max-width: 1200px;
   width: 100%;
   margin: 20px;
+  gap: 20px;
 }
 
 /* Contenedor del texto */
@@ -28,10 +28,20 @@ body {
   margin: 0 20px;
 }
 
+/* Imágenes como banners */
 img {
-  max-width: 150px;
-  height: auto;
+  width: 150px;
+  object-fit: cover;
   border-radius: 10px;
+  height: auto;
+}
+
+/* Ajuste específico para que ocupen toda la altura del texto */
+.left-img,
+.right-img {
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0; /* Evita que las imágenes se reduzcan */
 }
 
 /* Encabezado */
