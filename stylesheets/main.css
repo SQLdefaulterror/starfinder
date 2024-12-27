@@ -8,7 +8,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
 }
 
 /* Contenedor principal */
@@ -20,6 +19,7 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 20px;
+  gap: 20px;
 }
 
 /* Contenedor del texto */
@@ -29,9 +29,11 @@ body {
 }
 
 img {
-  max-width: 150px;
+  width: 250px; /* Aumenta el tamaño de las imágenes */
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Encabezado */
@@ -52,20 +54,20 @@ p {
 
 /* Listas */
 ul {
-  list-style-position: inside; /* Hace que los puntos estén dentro de las cajitas */
-  margin: 10px 0; /* Reduce el margen entre listas */
-  padding: 10px; /* Añade espacio interno */
+  list-style-position: inside;
+  margin: 10px 0;
+  padding: 10px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 ul ul {
-  margin-left: 15px; /* Reduce el margen de las sublistas */
+  margin-left: 15px;
 }
 
 li {
-  margin: 5px 0; /* Reduce la separación entre elementos */
+  margin: 5px 0;
   line-height: 1.4;
 }
 
