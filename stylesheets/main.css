@@ -71,7 +71,7 @@ ul {
 }
 
 ul ul {
-  margin-left: 15px; /* Reduce el margen de las sublistas */
+  margin-left: 5px; /* Reduce el margen de las sublistas */
 }
 
 li {
