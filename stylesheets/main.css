@@ -78,8 +78,6 @@ ul ul {
 
 li {
   margin: 5px 0; /* Reduce la separación entre elementos */
-  margin-top: 0;
-  margin-bottom: 0;
   line-height: 1.4;
 }
 
